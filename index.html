@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morgan & Holmes</title>
+<meta name="description" content="Morgan & Holmes LLC — a collective investment club empowering communities through group economics and generational wealth building.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to Content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="15" cy="15" r="13.5" fill="none" stroke="#16332B" stroke-width="1.5"/>
+        <circle cx="15" cy="15" r="3.5" fill="#B08D3D"/>
+      </svg>
+      Morgan &amp; Holmes
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav class="primary-nav" id="primary-nav">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="our-story.html">Our Story</a>
+      <a href="our-team.html">Our Team</a>
+      <a href="start-a-club.html">Start a Club</a>
+      <a href="blog.html">Blog</a>
+      <a class="btn-donate" href="donate.html">Donate</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Est. May 1, 2019 &middot; 12 Members &middot; 5 States</p>
+        <h1>Empowering communities through collective investing and generational wealth.</h1>
+        <p class="lede">A private investment collective, not a fund you can buy into &mdash; but we&rsquo;re always open to a conversation about partnership, donations, or starting your own.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:morganandholmes@gmail.com?subject=Reaching%20Out%20from%20Website&body=Hey%2C%20">Get in Touch</a>
+          <a class="btn btn-ghost" href="our-story.html">Read Our Story</a>
+        </div>
+      </div>
+      <div class="wheel-holder">
+        <!-- Signature graphic: a sou-sou wheel — 12 member nodes and one
+             advisor node pooling toward a shared center, the club's own
+             description of how it operates. -->
+        <svg class="sousou-wheel" viewBox="0 0 400 400" role="img" aria-label="Twelve members and one advisor pooling resources around a shared center, representing the club's sou-sou model">
+          <circle class="rim" cx="200" cy="200" r="150"/>
+          <g class="ring">
+            <g id="nodes"></g>
+          </g>
+          <circle class="hub" cx="200" cy="200" r="46"/>
+          <text class="hub-label" x="200" y="196">SOU-SOU</text>
+          <text class="hub-label" x="200" y="212">POOL</text>
+          <script>
+            (function(){
+              var ns = document.getElementById('nodes');
+              if(!ns) return;
+              var total = 13; // 12 members + 1 advisor
+              for (var i = 0; i < total; i++) {
+                var angle = (i / total) * Math.PI * 2 - Math.PI/2;
+                var x = 200 + Math.cos(angle) * 150;
+                var y = 200 + Math.sin(angle) * 150;
+                var cx = 200 + Math.cos(angle) * 46;
+                var cy = 200 + Math.sin(angle) * 46;
+                var spoke = document.createElementNS('http://www.w3.org/2000/svg','line');
+                spoke.setAttribute('class','spoke');
+                spoke.setAttribute('x1', cx); spoke.setAttribute('y1', cy);
+                spoke.setAttribute('x2', x); spoke.setAttribute('y2', y);
+                ns.appendChild(spoke);
+                var node = document.createElementNS('http://www.w3.org/2000/svg','circle');
+                node.setAttribute('class', 'node' + (i === total-1 ? ' advisor' : ''));
+                node.setAttribute('cx', x); node.setAttribute('cy', y); node.setAttribute('r', 7);
+                ns.appendChild(node);
+              }
+            })();
+          </script>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="ledger">
+    <div class="wrap">
+      <div class="stat"><span class="num">2019</span><span class="label">Founded</span></div>
+      <div class="stat"><span class="num">12</span><span class="label">Active Members</span></div>
+      <div class="stat"><span class="num">5</span><span class="label">States</span></div>
+      <div class="stat"><span class="num">1</span><span class="label">Advisory Investor</span></div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Every movement begins with a moment of clarity.</h2>
+        <p>For us, that moment came in 2019, when a group of driven Black and Brown men &mdash; most of us connected through Morgan State University &mdash; made a commitment to invest not just in markets, but in one another. What started as a modern take on a traditional &ldquo;sou-sou&rdquo; has grown into a dynamic investment club rooted in strategy, brotherhood, and purpose.</p>
+      </div>
+
+      <div class="card-grid">
+        <a class="card" href="our-story.html">
+          <p class="kicker">Our Projects Have Only Started</p>
+          <h3>Strategy in motion</h3>
+          <p>From market investments to real estate ventures, our work reflects a commitment to strategy, impact, and long-term wealth building.</p>
+          <span class="go">Learn more &rarr;</span>
+        </a>
+        <a class="card" href="start-a-club.html">
+          <p class="kicker">Have We Inspired You?</p>
+          <h3>Build your own circle</h3>
+          <p>We share the principles that power Morgan &amp; Holmes with aspiring groups ready to structure a club and pool funds the right way.</p>
+          <span class="go">Learn more &rarr;</span>
+        </a>
+        <a class="card" href="our-team.html">
+          <p class="kicker">From Team to Family</p>
+          <h3>The people behind it</h3>
+          <p>More than a team &mdash; a family. Get to know the founding members, active investors, and advisors who power our mission.</p>
+          <span class="go">Learn more &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="quote-block">
+    <blockquote>&ldquo;Together, we build; and, we build together.&rdquo;</blockquote>
+    <cite>&mdash; Morgan &amp; Holmes</cite>
+  </div>
+
+  <section class="disclaimer-band tight">
+    <div class="wrap">
+      <h2>Disclaimer</h2>
+      <p>Morgan &amp; Holmes is not a registered broker-dealer, investment adviser, or financial services firm with the U.S. Securities and Exchange Commission (SEC) or any other regulatory authority. The information presented on this website is for general informational and business communication purposes only.</p>
+      <p>Nothing contained on this site should be construed as investment advice, financial advice, legal advice, tax advice, or a recommendation to buy, sell, or hold any securities or financial products. Visitors should not rely upon the information on this site as a substitute for consultation with qualified legal, financial, or investment professionals.</p>
+    </div>
+  </section>
+
+  <section class="contact-cta">
+    <div class="wrap">
+      <div class="section-head"><h2>Contact</h2><p>Feel free to contact us with any questions.</p></div>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <p class="label">Email</p>
+          <a href="mailto:morganandholmes@gmail.com?subject=Reaching%20Out%20from%20Website&body=Hey%2C%20">morganandholmes@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <p class="label">Phone</p>
+          <a href="tel:8602817085">(860) 281-7085</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <p class="footer-brand">Morgan &amp; Holmes LLC</p>
+      <p class="footer-disclaimer">Morgan &amp; Holmes is not SEC-registered and this site is for informational purposes only. Nothing here constitutes investment, financial, or legal advice, nor a solicitation to buy or sell securities.</p>
+    </div>
+    <nav>
+      <a href="our-story.html">Our Vision</a>
+      <a href="donate.html">Donate</a>
+      <a href="our-team.html">Our Team</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </div>
+  <div class="footer-bottom"><div class="wrap">&copy; 2019&ndash;<span id="year"></span> Morgan &amp; Holmes LLC</div></div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

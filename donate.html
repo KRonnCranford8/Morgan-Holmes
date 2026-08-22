@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donate — Morgan & Holmes</title>
+<meta name="description" content="Support Morgan & Holmes LLC's mission of collective ownership, economic empowerment, and generational wealth building.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to Content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="15" cy="15" r="13.5" fill="none" stroke="#16332B" stroke-width="1.5"/>
+        <circle cx="15" cy="15" r="3.5" fill="#B08D3D"/>
+      </svg>
+      Morgan &amp; Holmes
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav class="primary-nav" id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="our-story.html">Our Story</a>
+      <a href="our-team.html">Our Team</a>
+      <a href="start-a-club.html">Start a Club</a>
+      <a href="blog.html">Blog</a>
+      <a class="btn-donate" href="donate.html" aria-current="page">Donate</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Support Our Mission</p>
+      <h1>Donate to Morgan &amp; Holmes</h1>
+      <p class="lede">At Morgan &amp; Holmes, we are building more than an investment portfolio &mdash; we&rsquo;re building a future rooted in collective ownership, economic empowerment, and generational wealth within Black and Brown communities.</p>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap" style="display:grid; grid-template-columns: 1.1fr 0.9fr; gap:48px; align-items:start;">
+      <div class="prose">
+        <p>Your donation helps us expand that mission. Whether it&rsquo;s seed capital for new projects, educational resources for our members, or tools that amplify our reach, <strong>every dollar goes toward strengthening our impact.</strong></p>
+        <p>This isn&rsquo;t charity &mdash; it&rsquo;s an investment in self-sufficiency, strategy, and the long game.</p>
+
+        <h3>&#128293; Why Donate?</h3>
+        <ul>
+          <li>Fuel new real estate and business ventures</li>
+          <li>Support financial literacy efforts and outreach</li>
+          <li>Help us empower the next generation of investors and leaders</li>
+          <li>Back a movement rooted in unity, discipline, and economic justice</li>
+        </ul>
+
+        <h3>&#128233; How to Give</h3>
+        <p>Contribute directly using the donation panel, or through our pre-discussed payment methods. For larger donations or partnership inquiries, please contact us at <a href="mailto:morganandholmes@gmail.com?subject=I%20Want%20To%20Donate%20a%20Large%20Sum%20to%20Morgan%20%26%20Holmes%20LLC&body=Greetings%2C%20%0AI%20would%20like%20to....">morganandholmes@gmail.com</a>.</p>
+        <p>Thank you for believing in our mission. Together, we build.</p>
+      </div>
+
+      <div class="donate-panel">
+        <p class="eyebrow" style="margin-bottom:6px;">Choose an amount</p>
+        <div class="amount-row">
+          <button type="button" data-amount="10">$10</button>
+          <button type="button" data-amount="20">$20</button>
+          <button type="button" data-amount="30">$30</button>
+          <button type="button" data-amount="40">$40</button>
+        </div>
+        <label for="custom-amount" style="font-family:var(--font-mono); font-size:0.8rem; display:block; margin-bottom:6px;">Custom amount ($)</label>
+        <input id="custom-amount" type="number" min="1" placeholder="0.00" style="width:100%; padding:12px; border:1px solid var(--ink); border-radius:3px; font-family:var(--font-mono); margin-bottom:18px;">
+
+        <!--
+          NOTE FOR K'RONN: to turn donations on later, delete the
+          <button disabled> below and replace it with:
+          <a class="btn btn-primary" style="width:100%; text-align:center;" href="YOUR-LINK-HERE">Donate</a>
+          using a Stripe Payment Link, PayPal.me link, or GiveButter/Zeffy
+          URL. See README "Wiring up real donations." No other changes
+          needed — just edit this one file and push.
+        -->
+        <button class="btn btn-primary" style="width:100%; text-align:center; opacity:0.5; cursor:not-allowed;" disabled>Donations Opening Soon</button>
+
+        <p class="donate-note">We&rsquo;re finalizing how we accept donations. In the meantime, reach out to <a href="mailto:morganandholmes@gmail.com?subject=I%20Want%20To%20Donate%20to%20Morgan%20%26%20Holmes%20LLC">morganandholmes@gmail.com</a> directly.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="quote-block">
+    <blockquote>Morgan &amp; Holmes LLC thanks you for your donation and generosity.</blockquote>
+    <cite>Together, we build. We build, together.</cite>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <p class="footer-brand">Morgan &amp; Holmes LLC</p>
+      <p class="footer-disclaimer">Morgan &amp; Holmes is not SEC-registered and this site is for informational purposes only. Nothing here constitutes investment, financial, or legal advice, nor a solicitation to buy or sell securities.</p>
+    </div>
+    <nav>
+      <a href="our-story.html">Our Vision</a>
+      <a href="donate.html">Donate</a>
+      <a href="our-team.html">Our Team</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </div>
+  <div class="footer-bottom"><div class="wrap">&copy; 2019&ndash;<span id="year"></span> Morgan &amp; Holmes LLC</div></div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
