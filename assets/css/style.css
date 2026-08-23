@@ -91,6 +91,16 @@ a { color: inherit; }
   height: 30px;
   flex: none;
 }
+.brand .logo-img {
+  height: 34px;
+  width: auto;
+  flex: none;
+}
+.footer-logo {
+  height: 40px;
+  width: auto;
+  margin-bottom: 12px;
+}
 nav.primary-nav {
   display: flex;
   align-items: center;
